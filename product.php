@@ -33,7 +33,6 @@
                     <h5 class=card-title>".$elem['name']." - ".$elem['price']."</h5>
                     <span class='badge bg-success'>".$elem['tag']."</span> 
                     <p class=card-text>".$elem['description']."</p>
-                    <p class=card-text><small class=text-muted>".$elem['description']."</small></p>
                     <a href='./src/descriptionProduct.php?token=".$elem['token']."' class='btn btn-primary'>Go to page !</a>
                     </div>
                 </div>

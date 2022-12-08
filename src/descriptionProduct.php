@@ -25,6 +25,7 @@
     foreach ($data as $elem) {
         if ($elem['token'] == $token) {
             echo "
+            <div class= 'container mt-3'>
                 <div class=card mb-3 style=max-width: 540px;>
                 <div class=row g-0>
                 <div class=col-md-4>
@@ -35,7 +36,7 @@
                     <h5 class=card-title>".$elem['name']." - ".$elem['price']."</h5>
                     <span class='badge bg-success'>".$elem['tag']."</span> 
                     <p class=card-text>".$elem['description']."</p>
-                    <p class=card-text><small class=text-muted>".$elem['description']."</small></p>
+                    </p><button class='btn btn-success'>Order !</button>
                     </div>
                 </div>
                 </div>
