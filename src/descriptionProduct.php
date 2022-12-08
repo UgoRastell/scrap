@@ -16,13 +16,15 @@
     </div>
     </nav>
     <?php
-    $json = file_get_contents('./data.json');
+    $json = file_get_contents('../data.json');
 
     $data = json_decode($json, true);
     
+    $token= $_REQUEST['token'];
 
     foreach ($data as $elem) {
-        echo "
+        if ($elem['token'] == $token) {
+            echo "
                 <div class=card mb-3 style=max-width: 540px;>
                 <div class=row g-0>
                 <div class=col-md-4>
@@ -34,12 +36,12 @@
                     <span class='badge bg-success'>".$elem['tag']."</span> 
                     <p class=card-text>".$elem['description']."</p>
                     <p class=card-text><small class=text-muted>".$elem['description']."</small></p>
-                    <a href='./src/descriptionProduct.php?token=".$elem['token']."' class='btn btn-primary'>Go to page !</a>
                     </div>
                 </div>
                 </div>
             </div>   
               ";
+        }
     }
     ?>
 
