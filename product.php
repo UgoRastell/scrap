@@ -10,7 +10,11 @@
 </head>
 
 <body>
-    <nav b-2bny3kbu4g class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">Scrap FakeTeeTurtle</nav>
+    <nav class="navbar navbar-light bg-light mt-3">
+    <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">Scrap FakeTeeTurtle</span>
+    </div>
+    </nav>
     <?php
     $json = file_get_contents('./data.json');
 
@@ -18,7 +22,7 @@
 
     foreach ($data as $elem) {
         echo "
-            <div class=container>
+            <div class= 'container mt-3'>
                 <div class=card mb-3 style=max-width: 540px;>
                 <div class=row g-0>
                 <div class=col-md-4>
