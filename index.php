@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-light mt-3">
+    <nav class="navbar navbar-light bg-light">
     <div class="container-fluid">
         <span class="navbar-brand mb-0 h1">Scrap FakeTeeTurtle</span>
     </div>
@@ -22,18 +22,18 @@
 
     foreach ($data as $elem) {
         echo "
-            <div class= 'container mt-3'>
-                <div class=card mb-3 style=max-width: 540px;>
+            <div class= 'container mt-3 mb-4'>
+                <div class=card>
                 <div class=row g-0>
                 <div class=col-md-4>
                     <img src=".$elem['url']." class=img-fluid rounded-start alt=> 
                 </div>
                 <div class=col-md-8>
                     <div class=card-body>
-                    <h5 class=card-title>".$elem['name']." - ".$elem['price']."</h5>
-                    <span class='badge bg-success'>".$elem['tag']."</span> 
-                    <p class=card-text>".$elem['description']."</p>
-                    <a href='./src/descriptionProduct.php?token=".$elem['token']."' class='btn btn-primary'>Go to page !</a>
+                        <h5 class=card-title>".$elem['name']." - ".$elem['price']."</h5>
+                        <span class='badge bg-success'>".$elem['tag']."</span> 
+                        <p class=card-text>".$elem['description']."</p>
+                        <a href='./src/descriptionProduct.php?token=".$elem['token']."' class='btn btn-primary'>Go to page !</a>
                     </div>
                 </div>
                 </div>
