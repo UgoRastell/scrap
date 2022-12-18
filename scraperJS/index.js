@@ -60,7 +60,7 @@ async function data() {
             json2.push(jsonData)
         })
     }
-    await fs.writeFile("data.json", JSON.stringify(json2))
+    await fs.writeFile("../data.json", JSON.stringify(json2))
 }
 
 
